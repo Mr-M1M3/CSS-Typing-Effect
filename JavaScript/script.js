@@ -1,3 +1,4 @@
+// Created by Abir Sheikh
 var elem = document.getElementById("text");
 var elem_content = elem.innerHTML;
 function text() {
@@ -15,5 +16,3 @@ setInterval(() => {
     }, 1000);
   }
 }, 200);
-
-// Created by Abir Sheikh
