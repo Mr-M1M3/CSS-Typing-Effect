@@ -14,10 +14,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #333333;
 }
 h1{
-  font-family: 'Inter', sans-serif;
-  position: absolute;
+  font-family: 'Source Code Pro', monospace;
+  color: #00ff00;
 }
 h1::after{
   content: "|";
