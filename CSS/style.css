@@ -10,36 +10,35 @@ html{
   font-size: 16px;
 }
 body{
-  height: auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+header{
+  min-height: 100vh;
+  padding: 1rem;
+  display: grid;
+  place-content: center;
   background-color: #333333;
 }
-h1{
-  font-family: 'Source Code Pro', monospace;
+h1.typewriter-container{
   color: #00ff00;
-  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: normal;
 }
-h1::after{
-  content: "|";
-  -webkit-animation: blink 200ms ease 0s infinite alternate forwards;
-          animation: blink 200ms ease 0s infinite alternate forwards;
+#text-to-type::after{
+  content: "_";
+  animation: blink 0.25s ease 0s infinite alternate both;
 }
-@-webkit-keyframes blink {
+@keyframes blink{
   from{
-    opacity: 0;
+      opacity: 0;
   }
   to{
-    opacity: 1;
+      opacity: 1;
   }
 }
-@keyframes blink {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
+
+/* Font Reference */
+
+/* font-family: 'Inter', sans-serif; */
+
+/* font-family: 'Source Code Pro', monospace; */
